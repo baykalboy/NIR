@@ -1,0 +1,16 @@
+# сертификаты и ключи — никогда не коммитить
+scripts/certs/
+*.key
+*.pem
+
+# логи и временные файлы от инструментов
+scripts/logs/
+scripts/conf/
+scripts/__pycache__/
+
+# дампы с чувствительными данными (большие бинарники, не нужны в git)
+sber/*.cap
+sber/*.pcapng
+sber/*.csv
+sber/*.kismet.*
+sber/*.log.csv

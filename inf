@@ -1,0 +1,116 @@
+──(baykalboy㉿PC-kali)-[~]
+└─$ sudo airmon-ng check kill
+[sudo] password for baykalboy: 
+
+Killing these processes:
+
+    PID Name
+    887 wpa_supplicant
+
+
+┌──(baykalboy㉿PC-kali)-[~]
+└─$ sudo airmon-ng start wlan0
+
+
+PHY     Interface       Driver          Chipset
+
+phy0    wlan0           iwlwifi         Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+                (mac80211 monitor mode vif enabled for [phy0]wlan0 on [phy0]wlan0mon)
+                (mac80211 station mode vif disabled for [phy0]wlan0)
+
+
+┌──(baykalboy㉿PC-kali)-[~]
+└─$ sudo aireplay-ng --test wlan0mon
+15:32:11  Trying broadcast probe requests...
+15:32:11  Injection is working!
+15:32:13  Found 3 APs
+
+15:32:13  Trying directed probe requests...
+15:32:13  D8:0D:17:7F:5E:56 - channel: 10 - 'TP-Link_5E56'
+read failed: Network is down
+wi_read(): Network is down
+write failed: Network is down
+wi_write(): Network is down
+write failed: Network is down
+wi_write(): Network is down
+write failed: Network is down
+wi_write(): Network is down
+write failed: Network is down
+wi_write(): Network is down
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
+wi_write(): No such device or address
+write failed: No such device or address
